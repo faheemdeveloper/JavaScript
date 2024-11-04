@@ -191,3 +191,34 @@ chainPrOne.then((one) => {
 }).finally(() => {
     console.log("all promise are done")
 })
+
+const prMethodOne = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("prmise one is reslove")
+    }, 3000);
+})
+
+const prMethodTwo = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject("prmise Two is reslove")
+    }, 4000);
+})
+
+const prMethodThree = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("prmise Three is reslove")
+    }, 5000);
+})
+
+Promise.allSettled([prMethodOne, prMethodTwo, prMethodThree])
+    .then((respnse) => {
+        return respnse
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((error) => {
+        console.log(error)
+    }).finally(() => {
+        console.log("all task are done")
+    })
