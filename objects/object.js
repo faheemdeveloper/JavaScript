@@ -117,3 +117,21 @@ for (let [key, value] of map) {
     console.log(`${key.toUpperCase()} :=> ${value.toUpperCase()}`)
 }
 
+const loopObj = {
+    user: "Wasid",
+    newage: 22,
+    isStudent: false,
+    job: false,
+
+    Contact : {
+        email: "wr@gmail.com",
+        password : "1234",
+        passDetail: {
+            pass2 : "wr432"
+        }
+    }
+}
+
+const {user, newAge, isStudent, job, Contact: {email, password, passDetail: {pass2}}} = loopObj
+
+console.log(pass2)

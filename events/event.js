@@ -30,3 +30,13 @@ aTag.addEventListener("click", (event) => {
     event.preventDefault()
     console.log("button was clicked")
 })
+
+const newBtn = document.querySelector(".new-btn")
+
+const clickfunc  = () => {
+    console.log("Button clicked")
+}
+
+newBtn.addEventListener("mouseover", () => {
+    clickfunc();
+})

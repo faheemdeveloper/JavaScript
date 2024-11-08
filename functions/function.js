@@ -77,3 +77,10 @@ let gettingArr = function(arr) {
 }
 
 console.log(gettingArr(student))
+
+const reverseStr = function() {
+    let str = "Hello"
+    return str.split("").reverse().join("")
+}
+
+console.log(reverseStr())

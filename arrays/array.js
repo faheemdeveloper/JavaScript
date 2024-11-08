@@ -104,3 +104,11 @@ const productTotal = productPrices.reduce((occum, curElem) => {
 })
 
 console.log(productTotal)
+
+let loopArr = ["Faheem", "wasid", "shehzad", "sohail", "shahzeb", "nizam"]
+
+loopArr[0] = "Rizwan"
+
+for(let values in loopArr) {
+    console.log(loopArr[values])
+}
