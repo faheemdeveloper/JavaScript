@@ -42,4 +42,20 @@ let textt = document.createTextNode("Click Me!")
 btn.appendChild(textt)
 document.body.appendChild(btn)
 
+let h1 = document.createElement("h1")
+let text = document.createTextNode("Hello JavaScript tum kab clear hogi");
+h1.appendChild(text)
+let body = document.querySelector("body");
+body.appendChild(h1)
 
+
+let dive = document.createElement("div")
+let text1 = document.createTextNode("Setureday");
+dive.appendChild(text1)
+let container1 = document.querySelector(".container")
+container1.appendChild(dive)
+
+let dive2 = document.createElement("div")
+let text2 = document.createTextNode("Sunday");
+dive.appendChild(text2)
+container1.appendChild(dive2)

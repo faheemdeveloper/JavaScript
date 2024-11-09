@@ -54,3 +54,19 @@ if (numberTwo % 5 === 0) {
 } else {
     console.log('Number is not devided by 5')
 }
+
+let mode = "ddsf"
+
+if (mode === "dark") {
+    color = "black"
+} else if (mode === "light") {
+    color = "white"
+} else if (mode === "blue") {
+    color = "blue"
+} else if (mode === "yellow") {
+    color = "yellow"
+} else {
+    color = ("no condition match")
+}
+
+console.log(color)
